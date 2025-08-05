@@ -3,7 +3,7 @@ services:
     image: redis:alpine
     platform: linux/amd64
     container_name: redis
-    command: redis-server --requirepass your_redis_password
+    command: redis-server --requirepass password 
     ports:
       - "6379:6379"
     restart: unless-stopped
